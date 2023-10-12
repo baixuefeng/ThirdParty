@@ -1,0 +1,13 @@
+prefix=E:/dev_dir/ThirdParty/3rd_root_windows
+exec_prefix=E:/dev_dir/ThirdParty/3rd_root_windows
+libdir=E:/dev_dir/ThirdParty/3rd_root_windows/lib
+sharedlibdir=E:/dev_dir/ThirdParty/3rd_root_windows/lib
+includedir=E:/dev_dir/ThirdParty/3rd_root_windows/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

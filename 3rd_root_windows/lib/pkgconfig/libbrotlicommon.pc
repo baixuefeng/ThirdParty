@@ -1,0 +1,11 @@
+prefix=E:/dev_dir/ThirdParty/3rd_root_windows
+exec_prefix=E:/dev_dir/ThirdParty/3rd_root_windows
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libbrotlicommon
+URL: https://github.com/google/brotli
+Description: Brotli common dictionary library
+Version: 1.0.9
+Libs: -L${libdir} -R${libdir} -lbrotlicommon
+Cflags: -I${includedir}

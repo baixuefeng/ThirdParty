@@ -1,0 +1,14 @@
+prefix=/e/dev_dir/ThirdParty/3rd_root_windows
+exec_prefix=${prefix}
+libdir=/e/dev_dir/ThirdParty/3rd_root_windows/lib
+includedir=/e/dev_dir/ThirdParty/3rd_root_windows/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.45.100
+Requires: 
+Requires.private: libavcodec >= 58.91.100, libswresample >= 3.7.100, libavutil >= 56.51.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -libpath:/e/dev_dir/ThirdParty/3rd_root_windows/lib libssl.lib libcrypto.lib ws2_32.lib
+Cflags: -I${includedir}

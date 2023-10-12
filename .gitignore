@@ -1,0 +1,11 @@
+/.git_*
+/3rd_root_linux
+/3rd_root_android
+/3rd_root_windows/boost_*
+/3rd_root_windows/cmake
+/3rd_root_windows/lib/cmake
+/3rd_root_windows/share/man
+/build_tmp*
+/3rd_root_windows/lib/pkgconfig/libjpeg.pc
+/3rd_root_windows/lib/pkgconfig/libturbojpeg.pc
+/3rd_root_windows/bin/c_rehash.pl

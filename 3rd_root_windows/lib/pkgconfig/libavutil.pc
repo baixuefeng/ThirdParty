@@ -1,0 +1,14 @@
+prefix=/e/dev_dir/ThirdParty/3rd_root_windows
+exec_prefix=${prefix}
+libdir=/e/dev_dir/ThirdParty/3rd_root_windows/lib
+includedir=/e/dev_dir/ThirdParty/3rd_root_windows/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.51.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: user32.lib bcrypt.lib
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/e/dev_dir/ThirdParty/3rd_root_windows
+exec_prefix=${prefix}
+libdir=/e/dev_dir/ThirdParty/3rd_root_windows/lib
+includedir=/e/dev_dir/ThirdParty/3rd_root_windows/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.91.100
+Requires: 
+Requires.private: libswresample >= 3.7.100, libavutil >= 56.51.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -libpath:/e/dev_dir/ThirdParty/3rd_root_windows/lib opus.lib -libpath:/e/dev_dir/ThirdParty/3rd_root_windows/lib libx264.lib -libpath:/e/dev_dir/ThirdParty/3rd_root_windows/lib libx265.lib mfplat.lib mfuuid.lib ole32.lib strmiids.lib user32.lib
+Cflags: -I${includedir}

@@ -1,0 +1,16 @@
+# Opus codec reference implementation pkg-config file
+
+prefix=E:/dev_dir/ThirdParty/3rd_root_windows
+exec_prefix=E:/dev_dir/ThirdParty/3rd_root_windows
+libdir=E:/dev_dir/ThirdParty/3rd_root_windows/lib
+includedir=E:/dev_dir/ThirdParty/3rd_root_windows/include
+
+Name: Opus
+Description: Opus IETF audio codec ( build)
+URL: https://opus-codec.org/
+Version: 0.8.0
+Requires:
+Conflicts:
+Libs: -LE:/dev_dir/ThirdParty/3rd_root_windows/lib -lopus
+Libs.private: 
+Cflags: -IE:/dev_dir/ThirdParty/3rd_root_windows/include/opus

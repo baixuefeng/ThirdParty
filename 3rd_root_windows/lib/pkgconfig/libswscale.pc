@@ -1,0 +1,14 @@
+prefix=/e/dev_dir/ThirdParty/3rd_root_windows
+exec_prefix=${prefix}
+libdir=/e/dev_dir/ThirdParty/3rd_root_windows/lib
+includedir=/e/dev_dir/ThirdParty/3rd_root_windows/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.7.100
+Requires: 
+Requires.private: libavutil >= 56.51.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: 
+Cflags: -I${includedir}

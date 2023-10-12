@@ -1,0 +1,14 @@
+prefix=/e/dev_dir/ThirdParty/3rd_root_windows
+exec_prefix=${prefix}
+libdir=/e/dev_dir/ThirdParty/3rd_root_windows/lib
+includedir=/e/dev_dir/ThirdParty/3rd_root_windows/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 55.7.100
+Requires: 
+Requires.private: libavutil >= 56.51.100
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: 
+Cflags: -I${includedir}
